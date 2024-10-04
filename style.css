@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --cor-de-fundo: #FEFAE0;
+    --cor-primaria: #798645;
+    --cor-secundaria: #626F47;
+    --fonte:"Nunito", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+    height: 100vh;
+    font-family: var(--fonte);
+}
+header{
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+h1{
+    color: var(--cor-de-fundo);
+    /*cor da fonte*/
+    font-size: 2rem;
+    /*tamanho da fonte*/
+    font-weight: 700;
+    /*peso da fonte*/
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    /*text-decoration serve para adicionar ou remover uma
+    decoração no texto*/
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    /*espaçamento externo*/
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    text-decoration: underline;
+    /*reduz o tamanho*/
+    transform: scale(0.9);
+    /*cria uma transição com 0.5s para o transform*/
+    transition: transform 0.5s;
+}
+span{
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+footer{
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+    text-align: center;
+}
+.graficos-container{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--cor-secundaria) solid 2px;
+}
